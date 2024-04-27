@@ -1,4 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Aladin&family=Alice&family=Bowlby+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Denk+One&family=Luxurious+Script&family=Playball&display=swap");
+
 
 * {
   margin: 0;
@@ -43,10 +44,25 @@ a {
   text-decoration: none;
   color: black;
 }
+.title-text {
+  position: relative;
+  padding-bottom: 20px;
+  font-family: "Aladin", system-ui;
+  font-weight: 600;
+  top: 25px;
+  color: var(--enam-color);
+  font-size: 30px;
+}
+.shadow-text{
+  position: absolute;
+  font-size: 70px;
+  color: var(--enam-color);
+  opacity: 0.3;
+}
 /* NAVBAR */
 header {
   width: 100%;
-  height: 65px;
+  height: 75px;
   background-color: var(--tiga-color);
   position: fixed;
   display: block;
@@ -79,7 +95,7 @@ header {
   display: flex;
   text-align: center;
   column-gap: 2rem; /*gap icon dgn yang lain*/
-  margin-top: 5px;
+  margin-top: 20px;
   margin-right: 5rem;
 }
 .icon-bx .bx {
@@ -98,36 +114,73 @@ header {
 #menu {
   display: none;
 }
+
+/* HELLO */
+.about-1 {
+  background-image: url("daun4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10000;
+  margin: 110px 50px 0px 50px; /*top, right, bottom, left*/
+  /* padding: 250px; */
+  text-align: center;
+  /* gap: 40px; */
+}
+.heading img {
+  border-radius: 50%;
+  height: 250px;
+  position: absolute;
+  z-index: 100;
+  top: 230px;
+  /* justify-content: center; */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading h1 {
+  display: flex;
+  /* position: relative; */
+  /* top: 6500px; */
+  padding-top: 300px;
+  padding-bottom: 20px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  font-family: "Luxurious Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+}
+.heading h2{
+  font-size: 50px;
+  color: var(--tiga-color);
+}
 /* ABOUT */
 .about {
   display: flex;
   /* width: 100%; jika diberi width, margin kanan tidak kelihatan*/
   background-color: var(--satu-color);
   box-shadow: var(--box-shadow);
-  justify-content: center;
-  margin: 110px 50px 30px 50px; /*top, right, bottom, left*/
-  gap: 40px;
+  margin: 50px 50px 0px 50px; /*top, right, bottom, left*/
+  gap: 60px;
+}
+.about-img{
+  padding: 20px;
 }
 .about-img img {
-  z-index: 10;
-  height: 420px;
-  border-radius: 5px;
+  margin-left: 50px;
+  border-radius: 300px;
+  height: 300px;
 }
 
-.about-text h1 {
-  font-size: 35px;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.about-text h2 {
+
+.about-text h3 {
   font-family: "Italianno", cursive;
   font-weight: 550;
   font-style: normal;
   font-size: 50px;
-  padding-bottom: 20px;
-}
-.about-text h3 {
-  font-size: 25px;
+  padding-top: 30px;
 }
 .about-text p {
   padding-top: 8px;
@@ -148,81 +201,32 @@ header {
   padding-right: 15px;
 }
 
-/* SKILL */
-.skill {
-  background-color: var(--dua-color);
-}
-.box-skill {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
-  padding: 0 40px;
-  gap: 0 80px;
-  margin: 0 auto; /*agar skill perxen di tengah*/
-}
-/* .box-skill .main {
-  display: flex;
-  text-align: center;
-} */
-/* .skill-html, .skill-css, .skill-js {
-  width: 50%;
-} */
-.percent {
-  display: flex; /*agar ditengah scr vertikal dgn align items*/
-  height: 20px;
-  border-radius: 30px;
-  background-color: var(--enam-color);
-  align-items: center;
-  font-size: 15px;
-  justify-content: center;
-  position: absolute; /*agar berada di atas*/
-  color: var(--satu-color);
-  /* width: 50%; */
-}
-.bottom {
-  width: 100%;
-  background-color: var(--second-color);
-  height: 20px;
-  border-radius: 30px;
-}
-.html {
-  width: 20%;
-}
-.css {
-  width: 10%;
-}
-.js {
-  width: 20%;
-}
-.skill h2 {
-  font-size: large;
-  padding: 10px;
-}
-.skill p {
-  padding: 15px 0; /*atas bawah, kanan kiri*/
-  font-size: 18px;
-  width: 90%;
-}
 /* PORTOFOLIO */
 .porto {
   background-color: var(--satu-color);
 }
+.judul h1{
+  /* position: absolute;
+  font-size: 70px;
+  color: var(--enam-color);
+  opacity: 0.3; */
+  left: 0;
+  right: 0;
+}
 .porto a {
   display: flex;
-  /* justify-content: center;  */
-  /* align-items: center; */
-  /* text-align: center; */
 }
 .porto-contain {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   gap: 3rem;
-  padding: 20px 10px;
+  padding: 25px 10px;
   justify-content: center;
 }
-.e-commerce img {
+.ikon-porto img {
   display: flex;
   position: absolute;
-  width: 200px;
+  width: 130px;
   justify-content: center;
   margin: 3px auto;
 }
@@ -233,25 +237,19 @@ header {
 }
 .box {
   width: 250px;
-  height: 200px;
+  height: 100px;
   background-color: var(--dua-color);
-  margin-top: 70px;
+  margin-top: 75px;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
 }
 .box h2 {
-  padding-top: 80px;
+  padding-top: 50px;
   text-align: center;
 }
 .box:hover {
   background-color: var(--satu-color);
   transition: 0.2rem all linear;
-}
-/* books */
-.books img {
-  display: flex;
-  position: absolute;
-  width: 150px;
 }
 /* CONTACT */
 .contain1 {
@@ -262,7 +260,6 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
   gap: 15px;
   padding: 20px 50px;
-  /* box-shadow: var(--box-shadow); */
 }
 .contact-icon {
   padding-top: 15px;
@@ -271,7 +268,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem; /*jarak ikon dengan text*/
+  gap: 0.5rem;
   padding: 3px 0;
 }
 .contact-icon .bx {
@@ -318,29 +315,27 @@ header {
   display: none;
 }
 
+/* RESPONSIVE */
 @media (max-width: 1053px) {
+  .heading h1{
+    font-size: 80px;
+  }
+  .heading h2{
+    font-size: 40px;
+  }
+  .about{
+    gap: 15px;
+  }
   .about-img img {
     display: flex;
-    height: 350px;
-    /* margin: auto 0; */
-    /* padding: auto; */
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    height: 300px;
+    margin-left: 0px;
   }
   .about-text {
     width: 800px;
   }
-  .about-text h1 {
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  .about-text h2 {
-    font-size: 40px;
-    padding-bottom: 5px;
-  }
   .about-text h3 {
-    font-size: 20px;
+    font-size: 50px;
   }
   .data-diri {
     font-size: 20px;
@@ -360,34 +355,29 @@ header {
   }
 }
 @media (max-width: 991px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Tengahkan konten secara horizontal */
-    align-items: center; /* Tengahkan konten secara vertikal */
+  .shadow-text{
+    font-size: 60px;
   }
+  .title-text{
+    font-size: 30px;
+  }
+  
+  
   .about-text {
     width: 100%;
   }
-  .about-img {
-    order: 2;
-  }
   .about-img img {
-    height: 500px;
+    height: 250px;
   }
-  /* skill */
-  .box-skill {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 10px;
-  }
-  .box-skill hr {
-    display: flex;
-  }
+  
 }
 @media (max-width: 768px) {
+  .heading h1{
+    font-size: 50px;
+  }
+  .heading h2{
+    color: var(--dua-color);
+  }
   .icon-bx {
     display: none;
   }
@@ -399,7 +389,7 @@ header {
     padding-right: 30px;
     justify-content: end;
     align-items: center;
-    height: 65px; /*untuk emengahkan secara vertikla harus dikasih height agar bisa menyesuaikan dengan tinggi*/
+    height: 65px;
   }
   #menu:hover {
     color: var(--dua-color);
@@ -424,33 +414,50 @@ header {
   .navbar a:hover {
     color: var(--tiga-color);
   }
-  /* about */
   .about {
     display: flex;
-    margin: 90px 30px 20px 30px; /*top, right, bottom, left*/
+    /* margin: 90px 30px 20px 30px; */
+    flex-direction: column;
   }
   .about-img img {
-    width: 100%;
+    position: absolute;
+    width: 200px;
     height: auto;
+    top: 700px;
+    right: 60px;
   }
-  /* skill */
-  section {
-    margin: 30px 30px;
+  .about-img{
+    order: 1;
+
+  }
+  .shadow-text{
+    font-size: 60px;
+  }
+  .title-text{
+    top: 18px;
   }
   /* porto */
   .porto-contain {
     padding: 0px;
     gap: 1rem;
   }
-  .e-commerce img {
-    width: 18;
-    padding-top: 10px;
+  
+}
+@media (max-width: 600px){
+  .about{
+    display: flex;
+    flex-direction: column;
   }
-  .books img {
-    width: 130px;
+  .about-img img{
+    position: static;
+    width: 200px;
+  }
+  .shadow-text{
+    font-size: 50px;
   }
 }
 @media (max-width: 360px) {
+  
   /* porto */
   .porto-contain {
     display: flex;
@@ -458,14 +465,10 @@ header {
     justify-content: center; /* Untuk memusatkan kotak-kotak secara horizontal */
     gap: 10px;
   }
-
-  .e-commerce img {
-    width: 150px;
-    padding-top: 10px;
+  .shadow-text{
+    font-size: 35px;
   }
-  .books img {
-    width: 120px;
-  }
-  .box {
+  .title-text{
+    font-size: 25px;
   }
 }
