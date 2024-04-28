@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Aladin&family=Alice&family=Bowlby+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Denk+One&family=Luxurious+Script&family=Playball&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -46,16 +45,16 @@ a {
 }
 .title-text {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   font-family: "Aladin", system-ui;
   font-weight: 600;
-  top: 25px;
+  top: 45px;
   color: var(--enam-color);
   font-size: 30px;
 }
-.shadow-text{
+.shadow-text {
   position: absolute;
-  font-size: 70px;
+  font-size: 100px;
   color: var(--enam-color);
   opacity: 0.3;
 }
@@ -152,7 +151,7 @@ header {
   font-weight: 400;
   font-size: 110px;
 }
-.heading h2{
+.heading h2 {
   font-size: 50px;
   color: var(--tiga-color);
 }
@@ -165,7 +164,7 @@ header {
   margin: 50px 50px 0px 50px; /*top, right, bottom, left*/
   gap: 60px;
 }
-.about-img{
+.about-img {
   padding: 20px;
 }
 .about-img img {
@@ -173,7 +172,6 @@ header {
   border-radius: 300px;
   height: 300px;
 }
-
 
 .about-text h3 {
   font-family: "Italianno", cursive;
@@ -183,8 +181,10 @@ header {
   padding-top: 30px;
 }
 .about-text p {
-  padding-top: 8px;
   font-size: 18px;
+}
+.deskripsi-about {
+  margin-top: 20px;
 }
 .data-diri {
   padding: 50px 0 0 0;
@@ -205,7 +205,7 @@ header {
 .porto {
   background-color: var(--satu-color);
 }
-.judul h1{
+.judul h1 {
   /* position: absolute;
   font-size: 70px;
   color: var(--enam-color);
@@ -234,14 +234,23 @@ header {
   padding-top: 0;
   justify-content: center;
   display: flex;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.bingkai:hover {
+  transform: scale(1.12); /* Memperbesar bingkai saat dihover */
+  border-radius: 15px;
 }
 .box {
   width: 250px;
   height: 100px;
   background-color: var(--dua-color);
   margin-top: 75px;
-  border-radius: 15px;
   box-shadow: var(--box-shadow);
+  border-radius: 15px;
 }
 .box h2 {
   padding-top: 50px;
@@ -251,13 +260,14 @@ header {
   background-color: var(--satu-color);
   transition: 0.2rem all linear;
 }
+
 /* CONTACT */
 .contain1 {
   background-color: var(--dua-color);
 }
 .contain {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 300px)); */
   gap: 15px;
   padding: 20px 50px;
 }
@@ -270,6 +280,7 @@ header {
   align-items: center;
   gap: 0.5rem;
   padding: 3px 0;
+  margin-left: 200px;
 }
 .contact-icon .bx {
   font-size: 18px;
@@ -277,18 +288,17 @@ header {
 .maycontact .garis {
   width: 100%;
 }
-/* Social */
-.social ul {
-  padding-top: 15px;
+.hr-contact {
+  margin: 7px auto;
+  text-align: center;
+  border-top: 1px solid var(--tiga-color);
+  width: 75%;
 }
-.social li {
-  padding: 3px 0;
+
+/* FOOTER */
+.footer {
+  margin-top: 30px;
 }
-.social a:hover {
-  color: var(--satu-color);
-  transition: 0.2rem all;
-}
-/* Footer */
 .footer p {
   display: flex;
   justify-content: center;
@@ -314,16 +324,91 @@ header {
 .box-skill hr {
   display: none;
 }
+/* JADWAL KULIAH HTML */
+.jadwal-kuliah-header {
+  display: flex;
+  flex-direction: row;
+}
+.jadwal-kuliah-header p {
+  margin: 25px 50px 0 auto;
+  font-size: 20px;
+  color: var(--bg-color);
+}
+.jadwal-kuliah h3{
+  font-size: 35px;
+}
+.jadwal-kuliah h5{
+  font-size: 30px;
+}
+.section-jadwalKuliah{
+  background-color: var(--satu-color);
+  padding: 20px 0;
+}
+.jadwalKuliah-bx {
+  color: var(--bg-color);
+  font-size: 40px;
+  margin: 15px 40px;
+}
+.jadwal-kuliah {
+  background-image: url("daun4.jpg");
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 110px;
+  text-align: center;
+  padding: 100px;
+
+}
+.jadwalKuliah {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 20px;
+  min-width: 100%;
+}
+
+.jadwal {
+  flex: 0 0 auto;
+  padding: 0 20px;
+}
+
+.jadwalKuliah,
+.jadwalKuliah * {
+  margin: 0;
+  padding: 0;
+}
+.jadwalKuliah p {
+  display: flex;
+  gap: 100px;
+  padding: 8px 50px;
+  justify-content: center;
+}
+.jadwalKuliah h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px;
+}
+.jadwal hr {
+  width: 100%;
+  margin: 0;
+}
 
 /* RESPONSIVE */
 @media (max-width: 1053px) {
-  .heading h1{
+  /* JADWAL KULIAH */
+  .jadwal-kuliah h3{
+    font-size: 30px;
+  }
+  .jadwal-kuliah h5{
+    font-size: 25px;
+  }
+  /* MAIN */
+  .heading h1 {
     font-size: 80px;
   }
-  .heading h2{
+  .heading h2 {
     font-size: 40px;
   }
-  .about{
+  .about {
     gap: 15px;
   }
   .about-img img {
@@ -355,27 +440,33 @@ header {
   }
 }
 @media (max-width: 991px) {
-  .shadow-text{
+  .shadow-text {
     font-size: 60px;
   }
-  .title-text{
+  .title-text {
     font-size: 30px;
   }
-  
-  
+
   .about-text {
     width: 100%;
   }
   .about-img img {
     height: 250px;
   }
-  
 }
 @media (max-width: 768px) {
-  .heading h1{
+  /* JADWAL KULIAH */
+  .jadwal-kuliah h3{
+    font-size: 20px;
+  }
+  .jadwal-kuliah h5{
+    font-size: 15px;
+  }
+  /* MAIN */
+  .heading h1 {
     font-size: 50px;
   }
-  .heading h2{
+  .heading h2 {
     color: var(--dua-color);
   }
   .icon-bx {
@@ -426,14 +517,13 @@ header {
     top: 700px;
     right: 60px;
   }
-  .about-img{
+  .about-img {
     order: 1;
-
   }
-  .shadow-text{
+  .shadow-text {
     font-size: 60px;
   }
-  .title-text{
+  .title-text {
     top: 18px;
   }
   /* porto */
@@ -441,23 +531,47 @@ header {
     padding: 0px;
     gap: 1rem;
   }
-  
+  /* Contact */
+  .contact-icon span{
+    margin-left: 100px;
+  }
 }
-@media (max-width: 600px){
-  .about{
+@media (max-width: 600px) {
+  section {
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  .about-1{
+    margin: 100px 20px 0px 20px;
+  }
+  .about {
+    margin: 20px 20px;
     display: flex;
     flex-direction: column;
   }
-  .about-img img{
+  .about-img img {
     position: static;
     width: 200px;
   }
-  .shadow-text{
+  .shadow-text {
     font-size: 50px;
+  }
+  /* Contact */
+  .contact-icon span{
+    margin-left: auto;
   }
 }
 @media (max-width: 360px) {
-  
+  /* JADWAL KULIAH */
+  .jadwal-kuliah h3{
+    font-size: 15px;
+  }
+  .jadwal-kuliah h5{
+    font-size: 10px;
+  }
+  /* MAIN */
   /* porto */
   .porto-contain {
     display: flex;
@@ -465,10 +579,10 @@ header {
     justify-content: center; /* Untuk memusatkan kotak-kotak secara horizontal */
     gap: 10px;
   }
-  .shadow-text{
+  .shadow-text {
     font-size: 35px;
   }
-  .title-text{
+  .title-text {
     font-size: 25px;
   }
 }

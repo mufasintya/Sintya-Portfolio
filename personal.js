@@ -14,3 +14,4 @@ navbarLinks.forEach(link => {
     navbar.classList.remove("active");
   });
 });
+
