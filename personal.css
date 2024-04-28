@@ -334,13 +334,13 @@ header {
   font-size: 20px;
   color: var(--bg-color);
 }
-.jadwal-kuliah h3{
+.jadwal-kuliah h3 {
   font-size: 35px;
 }
-.jadwal-kuliah h5{
+.jadwal-kuliah h5 {
   font-size: 30px;
 }
-.section-jadwalKuliah{
+.section-jadwalKuliah {
   background-color: var(--satu-color);
   padding: 20px 0;
 }
@@ -357,7 +357,6 @@ header {
   margin-top: 110px;
   text-align: center;
   padding: 100px;
-
 }
 .jadwalKuliah {
   display: flex;
@@ -395,10 +394,10 @@ header {
 /* RESPONSIVE */
 @media (max-width: 1053px) {
   /* JADWAL KULIAH */
-  .jadwal-kuliah h3{
+  .jadwal-kuliah h3 {
     font-size: 30px;
   }
-  .jadwal-kuliah h5{
+  .jadwal-kuliah h5 {
     font-size: 25px;
   }
   /* MAIN */
@@ -456,10 +455,10 @@ header {
 }
 @media (max-width: 768px) {
   /* JADWAL KULIAH */
-  .jadwal-kuliah h3{
+  .jadwal-kuliah h3 {
     font-size: 20px;
   }
-  .jadwal-kuliah h5{
+  .jadwal-kuliah h5 {
     font-size: 15px;
   }
   /* MAIN */
@@ -532,7 +531,7 @@ header {
     gap: 1rem;
   }
   /* Contact */
-  .contact-icon span{
+  .contact-icon span {
     margin-left: 100px;
   }
 }
@@ -543,7 +542,7 @@ header {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
   }
-  .about-1{
+  .about-1 {
     margin: 100px 20px 0px 20px;
   }
   .about {
@@ -559,16 +558,16 @@ header {
     font-size: 50px;
   }
   /* Contact */
-  .contact-icon span{
+  .contact-icon span {
     margin-left: auto;
   }
 }
 @media (max-width: 360px) {
   /* JADWAL KULIAH */
-  .jadwal-kuliah h3{
+  .jadwal-kuliah h3 {
     font-size: 15px;
   }
-  .jadwal-kuliah h5{
+  .jadwal-kuliah h5 {
     font-size: 10px;
   }
   /* MAIN */
